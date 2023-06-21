@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Lanche ou net</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      height: 70px;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.63), black);
+      color: white;
+      box-shadow: 0px 10px 40px black;
+    }
+
+    header h1 {
+      padding: 10px;
+    }
+
+    body {
+      background-color: rgba(0, 0, 0, 0.815);
+    }
+
+    nav {
+      background-color: black;
+      width: 600px;
+      height: 450px;
+      margin: auto;
+      border-radius: 25px;
+      margin-top: 10%;
+    }
+
+    form {
+      color: white;
+      text-align: center;
+      height: 80%;
+      width: 80%;
+      margin: auto;
+      position: relative;
+      top: 20%;
+    }
+
+    form label {
+      font-size: 20px;
+    }
+
+    input {
+      border-radius: 15px;
+      width: 200px;
+      height: 22px;
+      border: 2px solid rgb(63, 63, 63);
+      text-align: center;
+    }
+
+    button {
+      height: 34px;
+      width: 120px;
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 15px;
+      color: white;
+    }
+
+    @keyframes botao {
+      0% {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: 0px 0px 0px white;
+      }
+
+      100% {
+        background-color: white;
+        box-shadow: 0px 0px 15px white;
+      }
+    }
+
+    button:hover, #volta:hover {
+      animation: botao 0.30s both;
+      color: black;
+    }
+
+    #volta {
+      display: inline-block;
+      height: 24px;
+      width: 34px;
+      border: 2px solid white;
+      border-radius: 10px;
+      color: white;
+    }
+
+    select {
+      width: 100px;
+      height: 34px;
+      border: 2px solid white;
+      border-radius: 15px;
+      background-color: black;
+      color: white;
+      margin-top: 15px;
+    }
+
+  </style>
+  
+</head>
+
+<body>
+  <header>
+    <h1>Cadastro de funcionários</h1>
+  </header>
+  <nav>
+    <form action="/enviar-formulario" method="POST">
+          <label for="quantidade">Quantidade:</label><br>
+          <input type="number" id="quantidade" name="quantidade" required><br><br>
+      
+          <label for="alimento">Selecione o Produto:</label><br>
+          <select id="alimento" name="alimento" required>
+            <option value="">Selecione</option>
+            <option value="hamburguer">Hambúrguer</option>
+            <option value="pizza">Pizza</option>
+            <option value="pastel">Pastel</option>
+          </select><br><br>
+
+      <a id="volta" href="index.html"><<</a>
+      <button>Enviar</button>
+    </form>
+  </nav>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(content/image/71578.jpg);
+    background-size: cover;
+}
+
+#head {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+#list-head {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#list-head li {
+    padding-right: 40px;
+}
+
+#logo {
+    font-size: 50px;
+}
+
+#corpo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#fotada { 
+    width: 800px;
+}
