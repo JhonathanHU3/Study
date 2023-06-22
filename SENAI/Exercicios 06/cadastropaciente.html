@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="tudo">
+        <header id="cabeça">
+            <div id="logo">
+                <img width="100%"
+                    src="content/image/148882735_3919137681471713_4386889163366299980_n-removebg-preview.png">
+                <div>
+                    <p id="clinica">Clínica de</p>
+                    <p id="todos">todos</p>
+                </div>
+            </div>
+            <ul id="lista-top">
+                <a href="cadastropaciente.html">
+                    <li>Cadastrar Paciente</li>
+                </a>
+                <a href="cadastromedico.html">
+                    <li>Cadastrar Médico</li>
+                </a>
+                <a href="agendar.html">
+                    <li>Agendar Consulta</li>
+                </a>
+                <a href="consultas.html">
+                    <li>Visualizar Consultas</li>
+                </a>
+            </ul>
+            <a id="loginbutton" href="login.html">
+                <p>Login</p>
+            </a>
+        </header>
+        <main id="main">
+            <div id="borda">
+                <form action="#" id="cadastro">
+                    <h1>Cadastro de paciente</h1>
+                    <p>*Insira os dados do paciente</p>
+                    <label>Nome: <br><input id="caixa1" type="text"></label><br>
+                    <label for="sexo">Sexo: </label>
+                    <div id="sexo">
+                        <label style="font-weight: 400; font-size: 18px; " ><input type="radio" name="sexo"> Masculino</label>
+                        <label style="font-weight: 400; font-size: 18px; "><input type="radio" name="sexo"> Feminino</label>
+                    </div>
+                    <label>Idade: <input type="number"></label><br>
+                    <label>Telefone: <br><input id="caixa1" type="tel" placeholder="(xx) x xxxx-xxxx"></label><br>
+                    <label>Email: <br><input id="caixa1" type="email" placeholder="seuemail@email.com"></label><br>
+                    <button id="enviar">Cadastrar</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
