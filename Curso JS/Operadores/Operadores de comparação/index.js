@@ -10,11 +10,5 @@ Operadores de comparação
 !== diferente (valor e tipo)
 */
 
-let num1 = Number.randon()
-console.log(num1)
-
-if (num1) {
-    console.log('Hello world')
-} else {
-    console.log('Faz o LLLLLL')
-}
+const porra = 10 !== 11
+console.log(porra)
