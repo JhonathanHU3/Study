@@ -10,14 +10,17 @@ function myFunction() {
         const sobrenome = form.querySelector('.sobrenome');
         const peso = form.querySelector('.peso');
         const altura = form.querySelector('.altura');
-        return(jair = {            
+        pessoas.push({            
             nome: nome.value,
             sobrenome: sobrenome.value,
             peso: peso.value,
             altura: altura.value})
+            console.log(pessoas);
+        
+            resultado.innerHTML += `<p>Seu nome é ${nome.value} ${sobrenome.value}, você pesa ${peso.value} Kg, e tem ${altura.value} Mts de altura, seu IMC é ${(peso.value/(altura.value ** 2)).toFixed(2)}`;
         
     } 
-    console.log(jair);
+    
 
     form.addEventListener('submit', recebeEventoForm);
 }
