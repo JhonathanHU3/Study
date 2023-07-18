@@ -1,0 +1,162 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    width: 1100px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 78px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 140px;
+    text-align: center;
+}
+header a {
+    display: none;
+}
+
+header a p {
+    margin: 8px;
+}
+
+#div1 {
+    background-image: url(content/image/header_lp_jornada_unificada_desktop_V3.png);
+    height: 430px;
+}
+
+#abrir {
+    background-color: white;
+    width: 600px;
+    height: 360px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px rgb(182, 182, 182);
+    position: relative;
+    margin: auto;
+    top: 25px;
+    padding: 10px;
+
+}
+
+#abrir h1 {
+    font-size: 43px;
+    font-weight: 400;
+    margin: 30px;
+    margin-bottom: 15px;
+    color: rgb(48, 48, 48);
+}
+
+#abrir p {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 30px;
+    margin-top: 15px;
+    color: rgb(114, 114, 114);
+}
+
+#abrir form {
+    margin: 15px;
+}
+
+#abrir form input {
+    width: 50%;
+    height: 52px;
+    margin: 20px;
+    margin-top: 15px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 3px;
+}
+
+#abrir form input::placeholder {
+    font-size: 17px;
+    color: rgb(73, 73, 73);
+    font-weight: 500;
+}
+
+#jair {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(214, 0, 0);
+    color: white;
+    width: 200px;
+    font-weight: 500;
+    font-size: 19px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+}
+
+#div2 {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+#title2 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 65px;
+    font-weight: 400;
+    font-size: 37px;
+}
+
+#div2 #divdiv {
+    background-color: white;
+    box-shadow: 0px 0px 15px rgb(170, 170, 170);
+    border-left: rgb(214, 0, 0) solid 2px;
+    border-radius: 4px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#texto {
+    width: 370px;
+    margin-top: 18px;
+}
+
+#texto h2 {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+#texto p {
+    font-size: 17px;
+    margin-top: 7px;
+    color: rgb(71, 71, 71);
+}
+
+#vermelha {
+    background-color: rgb(214, 0, 0);
+    width: 100px;
+    height:100px;
+    margin: 50px;
+    margin-right: 17px;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+}
+
+#vermelha p {
+    font-size: 30px;
+    border: solid 2px white;
+    width: 40px;
+    height: 40px;
+    border-radius: 45px;
+    margin: 28px;
+}
