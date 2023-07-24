@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(66, 66, 66);
+    height: 78px;
+    font-size: 19px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header ul li {
+    margin: 25px;
+}
+
+#saldo {
+   display: flex; 
+   border: white 2px solid;
+   border-radius: 10px;
+   margin: 5px;
+   margin-left: 100px;
+}
+
+#saldo img {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+
+#saldo p {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+header a {
+    color: white;
+}
+
+header div {
+    display: flex;
+}
+
+#login-cadastro {
+    display: flex;
+}
+
+#login-cadastro a {
+    margin: 25px;
+    margin-left: 50px;
+}
+
+#premio {
+    display: flex;
+    justify-content: center;
+}
+
+#premio img {
+    width: 400px;
+}
+
+#corpo h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+#produtos {
+    box-shadow: 0px 0px 10px rgb(66, 66, 66);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#produtos p{
+    margin: 5px;
+}
+
+#preco {
+    display: flex;
+    width: 35%;
+    position: relative;
+    margin: auto;
+}
+
+#preco img {
+    width: 50px; 
+    height: 50px;
+}
+
+#preco p {
+    margin: 10px;
+}
+
+#resgatar {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    display: block;
+    padding: 12px;
+    width: 70%;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+}
