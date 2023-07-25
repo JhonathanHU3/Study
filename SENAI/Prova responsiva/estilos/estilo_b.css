@@ -1,0 +1,24 @@
+* {
+    font-size: 0.95em;
+    box-sizing: border-box;
+}
+
+[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+.folha {
+    width: 100%;
+}
+
+form {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    padding: 15px;
+}
+
+tr:nth-child( 2 ) {
+	font-size: 18px;
+}
