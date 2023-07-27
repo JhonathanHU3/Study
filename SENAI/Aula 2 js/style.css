@@ -12,7 +12,7 @@ body {
 
 form {
     background-color: white;
-    width: 40%;
+    width: 600px;
     position: relative;
     margin: 40px auto;
     text-align: center;
@@ -39,7 +39,7 @@ p {
     font-size: 18px;
 }
 
-[type="number"], [type="text"] {
+[type="number"], [type="text"], [type="email"] {
     width: 300px;
     border: rgb(121, 121, 121) 2px solid;
 }
