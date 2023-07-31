@@ -27,8 +27,6 @@ form input {
 }
 
 #div {
-    background-color: rgb(18, 95, 9);
-    color: white;
     width: 80%;
     position: relative;
     margin: 10px auto;
@@ -42,4 +40,8 @@ p {
 [type="number"], [type="text"], [type="email"] {
     width: 300px;
     border: rgb(121, 121, 121) 2px solid;
+}
+
+table {
+    border: rgb(84, 84, 84) 1px solid;
 }

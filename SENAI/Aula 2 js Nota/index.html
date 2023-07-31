@@ -11,20 +11,20 @@
 
 <body>
     <form id="forms" action="#">
-        <h1>Obrigatoriedade do voto</h1>
+        <h1>Gerar boletim do aluno</h1>
         <div class="form-group"></div><label>Digite seu nome: <input id="nome" class="form-control" type="text"></label>
         </div><br>
         <div class="form-group"></div><label>Digite o seu curso: <input id="curso" class="form-control"
                 type="text"></label></div><br>
-        <div class="form-group"></div><label>Digite a sua nota: <input id="nota" class="form-control"
+        <div class="form-group"></div><label>Digite sua nota: <input id="nota" class="form-control"
                 type="number"></label></div><br>
-        <input type="submit" value="Enviar" onclick="myFunction()" class="btn btn-primary">
+        <input value="Enviar" onclick="myFunction()" class="btn btn-primary">
         <div id="div"></div>
     </form>
 
     <script>
+        let div = document.querySelector('#div');
         function myFunction() {
-            let div = document.querySelector('#div');
             let nome = forms.nome.value;
             let curso = forms.curso.value;
             let nota = Number(forms.nota.value);
@@ -32,9 +32,26 @@
                 return div.innerHTML = `<p>Dados inválidos</p>`
             }
 
-            let voto = consultaNota(nota);
+            let situacao = consultaNota(nota);
 
-            div.innerHTML = `<p>Eleitor ${nome} de ${idade} anos, seu voto é ${voto}.</p>`
+            div.innerHTML = `<table class="table table-hover">
+                            <tr>
+                                <th colspan="3">SENAI CTTI</th>
+                            </tr>
+                            <tr>
+                            <td>Nome</td>
+                            <td>Curso</td>
+                            <td>Nota</td>
+                            </tr>
+                            <tr>
+                            <td>${nome}</td>
+                            <td>${curso}</td>
+                            <td>${nota}</td>
+                            </tr>
+                            <tr>
+                            <td colspan="3">Situação: ${situacao}</td>
+                            </tr>
+                            </table>`
         };
 
         function consultaNota(nota) {
@@ -42,7 +59,7 @@
             if (nota >= 60) return tipos[0];
             if (nota > 39) return tipos[1];
             if (nota < 40) return tipos[2];
-        }
+        };
     </script>
 </body>
 
