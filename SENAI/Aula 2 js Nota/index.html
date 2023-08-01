@@ -18,7 +18,7 @@
                 type="text"></label></div><br>
         <div class="form-group"></div><label>Digite sua nota: <input id="nota" class="form-control"
                 type="number"></label></div><br>
-        <input value="Enviar" onclick="myFunction()" class="btn btn-primary">
+        <button value="Enviar" onclick="myFunction()" class="btn btn-primary">Enviar</button>
         <div id="div"></div>
     </form>
 
@@ -29,8 +29,11 @@
             let curso = forms.curso.value;
             let nota = Number(forms.nota.value);
             if ((!isNaN(nome)) || (!nota) || (!isNaN(curso))) {
-                return div.innerHTML = `<p>Dados inválidos</p>`
+                div.style.background = 'Red'
+                return div.innerHTML = `<p style="color: white;">Dados inválidos</p>`
             }
+
+            div.style.background = ''
 
             let situacao = consultaNota(nota);
 
@@ -49,16 +52,16 @@
                             <td>${nota}</td>
                             </tr>
                             <tr>
-                            <td colspan="3">Situação: ${situacao}</td>
+                            ${situacao}
                             </tr>
                             </table>`
         };
 
         function consultaNota(nota) {
             let tipos = ['Aprovado', 'Recuperação', 'Reprovado']
-            if (nota >= 60) return tipos[0];
-            if (nota > 39) return tipos[1];
-            if (nota < 40) return tipos[2];
+            if (nota >= 60) return `<td id="aprovado" colspan="3">Situação: ${tipos[0]}</td>`;
+            if (nota > 39) return `<td id="recuperacao" colspan="3">Situação: ${tipos[1]}</td>`;
+            if (nota < 40) return `<td id="reprovado" colspan="3">Situação: ${tipos[2]}</td>`; 
         };
     </script>
 </body>

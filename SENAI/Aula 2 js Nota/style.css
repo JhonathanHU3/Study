@@ -45,3 +45,22 @@ p {
 table {
     border: rgb(84, 84, 84) 1px solid;
 }
+
+#aprovado {
+    color: rgb(2, 145, 2);
+}
+
+#recuperacao {
+    color: rgb(188, 163, 0);
+}
+
+#reprovado {
+    color: rgb(193, 1, 1);
+}
+
+button {
+    width: 300px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
