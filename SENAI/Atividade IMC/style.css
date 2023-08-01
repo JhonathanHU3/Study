@@ -1,0 +1,34 @@
+body {
+    background-color: #212529;
+}
+
+.navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin-right: 50px;
+    margin-left: 15px;
+}
+
+.navbar {
+    padding: 15px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container h1, .container p {
+    width: 60%;
+}
