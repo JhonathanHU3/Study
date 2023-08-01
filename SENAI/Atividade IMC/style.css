@@ -31,4 +31,17 @@ body {
 
 .container h1, .container p {
     width: 60%;
+    text-align: justify;
+}
+
+#cont2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#cont2 h1, #cont2 p {
+    width: 60%;
+    text-align: justify;
 }
