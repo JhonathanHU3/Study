@@ -14,21 +14,26 @@
         <h1>Gerar boletim do aluno</h1>
         <div class="form-group"></div><label>Digite seu nome: <input id="nome" class="form-control" type="text"></label>
         </div><br>
-        <div class="form-group"></div><label>Digite o seu curso: <input id="curso" class="form-control"
-                type="text"></label></div><br>
+        <div class="form-group"></div><label>Digite o seu curso: <select style="width: 300px;
+            border: rgb(121, 121, 121) 2px solid; height: 45px;" id="curso" class="form-select">
+            <option value="null">Selecione um curso</option>
+            <option value="Informática">Informática</option>
+            <option value="TI">TI</option>
+            <option value="Redes">Redes</option>
+        </select></label></div><br>
         <div class="form-group"></div><label>Digite sua nota: <input id="nota" class="form-control"
                 type="number"></label></div><br>
-        <button value="Enviar" onclick="myFunction()" class="btn btn-primary">Enviar</button>
+        <button type="button" value="Enviar" onclick="myFunction()" class="btn btn-primary">Enviar</button>
         <div id="div"></div>
     </form>
 
     <script>
         let div = document.querySelector('#div');
-        function myFunction() {
+        function myFunction(e) {
             let nome = forms.nome.value;
             let curso = forms.curso.value;
             let nota = Number(forms.nota.value);
-            if ((!isNaN(nome)) || (!nota) || (!isNaN(curso))) {
+            if ((!isNaN(nome)) || (!nota) || (!isNaN(curso) || (curso === "null"))) {
                 div.style.background = 'Red'
                 return div.innerHTML = `<p style="color: white;">Dados inválidos</p>`
             }
