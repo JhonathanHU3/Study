@@ -21,13 +21,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#quali">Qualidade de vida</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#cont2">Calculadora de IMC</a>
                     </li>
                 </ul>
             </div>
@@ -56,20 +56,153 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    
-    <div class="container">
-        <h1>Saúde e bem estar</h1>
-        <p>Saúde e bem-estar é um tema bastante complexo e que merece a atenção, pois apresenta relação direta com a qualidade de vida da população. Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades, é, inclusive, o terceiro objetivo dos 17 Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030, assinados pelos países-membros da Organização das Nações Unidas (ONU). "Veja mais sobre "Saúde e Bem-estar" em: https://brasilescola.uol.com.br/saude</p>
-    </div>
 
-    <div class="container" id="cont2">
-        <h1>Saúde e bem estar</h1>
-        <p>Saúde e bem-estar é um tema bastante complexo e que merece a atenção, pois apresenta relação direta com a qualidade de vida da população. Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades, é, inclusive, o terceiro objetivo dos 17 Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030, assinados pelos países-membros da Organização das Nações Unidas (ONU). "Veja mais sobre "Saúde e Bem-estar" em: https://brasilescola.uol.com.br/saude</p>
-    </div>
+    <div class="container">
+        <h1>Saúde e bem-estar</h1>
+        <p>Saúde e bem-estar é um tema bastante complexo e que merece a atenção, pois apresenta relação direta com a
+            qualidade de vida da população. Assegurar uma vida saudável e promover o bem-estar para todos, em todas as
+            idades, é, inclusive, o terceiro objetivo dos 17 Objetivos de Desenvolvimento Sustentável (ODS) da Agenda
+            2030, assinados pelos países-membros da Organização das Nações Unidas (ONU)./p>
+    </div><br>
+
+    <div class="container">
+        <h1 id="quali">Saúde, bem-estar e qualidade de vida</h1>
+        <p>O conceito de qualidade de vida é bastante diversificado, sendo possível encontrar diferentes definições na
+            literatura. De acordo com a OMS, a qualidade de vida pode ser definida como “a percepção do indivíduo de sua
+            inserção na vida, no contexto da cultura e sistemas de valores nos quais ele vive e em relação aos seus
+            objetivos, expectativas, padrões e preocupações”. Esse conceito é extremamente complexo e está relacionado
+            com aspectos físicos, psicológicos, sociais, entre outros.</p>
+    </div><br>
+
+    <div class="container">
+        <h1>Dicas de saúde e bem-estar</h1>
+        <ul>
+            <li>Pratique exercícios físicos regularmente.</li>
+
+            <li>Alimente-se bem, reduzindo sempre alimentos industrializados, ricos em sal, açúcares e gorduras. Insira
+                na dieta mais alimentos naturais.</li>
+
+            <li>Beba muita água.</li>
+
+            <li>Evite o fumo e bebidas alcoólicas em excesso.</li>
+
+            <li>Proteja a pele da exposição excessiva ao sol. Utilize sempre filtro solar.</li>
+
+            <li>Priorize as boas noites de sono.</li>
+
+            <li>Faça um check-up regularmente.</li>
+
+            <li>Cuide da sua saúde mental e nunca sinta vergonha de procurar ajuda psicológica.</li>
+
+            <li>Não utilize medicamentos sem prescrição médica.</li>
+
+            <li>Tenha hábitos de higiene adequados, lembrando-se sempre de lavar as mãos e de não compartilhar objetos
+                de uso pessoal.</li>
+
+            <li>Controle seu estresse.</li>
+
+            <li>Procure sempre organizar um tempo na sua agenda para as atividades que mais gosta, como passear no
+                parque ou assistir a um filme no cinema.</li>
+
+            <li>Evite comparar sua vida social com a de outras pessoas.</li>
+
+            <li>Não se preocupe com o padrão de beleza imposto pela sociedade, pois cada pessoa é única e apresenta uma
+                beleza diferente.</li>
+
+            <li>Mantenha boas relações sociais.</li>
+
+            <li>Evite fazer muitas coisas ao mesmo tempo.</li>
+
+            <li>Controle suas finanças.</li>
+
+            <li>Seja grato por tudo o que conquistou."</li>
+        </ul>
+    </div><br>
+
+    <div id="bolso">
+        <div id="cont2">
+            <h1>Calculadora de IMC</h1>
+            <form class="form" action="">
+                <label class="form-label">Peso: <input class="peso form-control" type="text"
+                        placeholder="Seu peso(em Kg)"></label><br>
+                <label class="form-label">Altura: <input class="altura form-control" type="text"
+                        placeholder="Sua altura(em M)"></label><br>
+                <button class="btn btn-primary">Calcular</button>
+            </form>
+            <div class="resultado"></div>
+        </div>
+    </div><br><br><br>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+
+    <script>
+        // Capturar evento de submit do form
+        const form = document.querySelector('.form');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const inputPeso = e.target.querySelector('.peso');
+            const inputAltura = e.target.querySelector('.altura');
+
+            const peso = Number((inputPeso.value).replace(",", "."));
+            const altura = Number((inputAltura.value).replace(",", "."));
+
+            if (!peso) {
+                return setResultado('Peso inválido', false);
+            };
+
+            if (!altura) {
+                return setResultado('Altura inválida', false);
+            };
+
+            const imc = getImc(peso, altura);
+            const grauImc = getGrauImc(imc);
+
+            const msg = `Seu IMC é ${imc} (${grauImc})`;
+
+            setResultado(msg, true);
+        });
+
+        function getGrauImc(imc) {
+            const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3']
+
+            if (imc >= 40) return nivel[5];
+            if (imc >= 35) return nivel[4];
+            if (imc >= 30) return nivel[3];
+            if (imc >= 25) return nivel[2];
+            if (imc >= 18.5) return nivel[1];
+            if (imc < 18.5) return nivel[0];
+        }
+
+        function getImc(peso, altura) {
+            const imc = peso / (altura * altura);
+            return imc.toFixed(2);
+        };
+
+        function criaP() {
+            const p = document.createElement('p');
+            return p;
+        };
+
+        function setResultado(msg, eValido) {
+            const resultado = document.querySelector('.resultado');
+            resultado.innerHTML = " ";
+
+            const p = criaP();
+
+            if (eValido) {
+                p.classList.add('valido');
+            } else {
+                p.classList.add('invalido');
+            }
+
+            p.innerHTML = msg.replace(".", ",");
+            resultado.appendChild(p);
+        };
+    </script>
 </body>
 
 </html>
