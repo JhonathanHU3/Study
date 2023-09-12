@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 01</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            background-color: rgb(27, 184, 61);
+            padding: 50px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        form button{
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+
+        input {
+            margin: 5px;
+        }
+        button{
+            width: 50%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <h1>Cadastro de aluno</h1>
+        <label>Nome <br><input type="text" name="nome"></label>
+        <label>Sobrenome <br><input type="text" name="sobrenome"></label>
+        <label>Email <br><input type="email" name="email"></label>
+        <label>Senha <br><input type="password" name="senha"></label>
+        <button>Cadastrar</button>
+    </form>
+</body>
+</html>
