@@ -1,16 +1,16 @@
-// Equilibrio de parênteses
-const arrEx1 = ['((()))','(()))','()(()','(((())(('];
+function validaParenteses(parenteses) {
+    var arrayParenteses = parenteses; // reduce só funciona com arrays
+    /**
+     * Vamos utilizar números para essa solução. Para cada parêntese esquerdo, vamos
+     * somar 1 e para cada parêntese direito vamos subtrair um
+     **/
+    var balanceado =  arrayParenteses.map(function(soma, parentese) {
+      if(soma < 0) { return soma } // para o caso de começar com ")"
+      if(parentese ===  "(") { return ++soma }
+      if(parentese ===  ")") { return --soma }
+    }, 0);
+  
+    return balanceado;
+  }
 
-let arrayboolean = arrEx1.reduce((arrayboolean ,parentese) => {
-        let soma = 0;
-        if(parentese === '(') {soma++};
-        if(parentese === ')') {soma--};
-        console.log(parentese)
-        console.log(soma)
-        if(soma !== 0) {parentese = false} else {parentese = true};
-        console.log(parentese)
-        arrayboolean.push(parentese);
-        return arrayboolean;
-    },[])
-
-console.log(arrayboolean);
+console.log(validaParenteses(['((()))','(()))','()(()','(((())((']))
