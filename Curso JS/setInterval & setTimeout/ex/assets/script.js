@@ -14,8 +14,8 @@ function timer() {
     function initTimer() {
         clearInterval(timer);
         timer = setInterval(() => {
-            clock.innerHTML = millisecondsToTime(timerValue++);
-        }, 1000);
+            clock.innerHTML = millisecondsToTime(timerValue += 100);
+        }, 100);
         clock.style.color = 'black';
     }
 
@@ -31,8 +31,8 @@ function timer() {
         clock.style.color = 'black';
     }
 
-    function millisecondsToTime(seconds) {
-        const date = new Date(seconds * 1000);
+    function millisecondsToTime(milliseconds) {
+        const date = new Date(milliseconds);
 
 
         return date.toLocaleTimeString('pt-BR', {

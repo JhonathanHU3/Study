@@ -1,5 +1,5 @@
 :root {
-    --cor1: rgb(52, 122, 19);
+    --cor1: rgb(13, 107, 170);
     --cor2: rgb(36, 92, 8);
 }
 
@@ -25,53 +25,22 @@ body {
     padding: 25px;
     font-size: 20px;
     line-height: 1.5em;
+    text-align: center;
 }
 
-form input, form label, form button {
-    display: block;
-    width: 100%;
-    margin: 10px 0px;
-}
-
-form input {
-    height: 45px;
-}
-
-form input:focus {
-    border: 2px solid var(--cor1);
-    outline: none;
-}
-
-form button {
-    height: 45px;
-    color: white;
-    background-color: var(--cor1);
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-form button:hover {
-    background-color: var(--cor2);
-}
-
-.avaliacao {
-    background-color: rgb(0, 255, 170);
-    width: 100%;
-    font-weight: 500;
-    border-radius: 10px;
-    margin-top: 15px;
+h1 {
+    font-size: 40px;
+    margin: 10px;
 }
 
 #clock {
     font-size: 40px;
-    margin: 10px;
-    margin-top: 15px;
+    margin: 15px;
+    margin-top: 20px;
 }
 
 #buttons button {
+    width: 100px;
     padding: 4px;
     margin: 5px;
     margin-top: 10px;
