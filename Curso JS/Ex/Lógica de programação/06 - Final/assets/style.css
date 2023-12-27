@@ -1,0 +1,68 @@
+:root {
+    --cor1: rgb(32, 125, 179);
+    --cor2: rgb(26, 106, 153);
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--cor1);
+}
+
+.main {
+    background-color: white;
+    max-width: 650px;
+    position: relative;
+    margin: 50px auto;
+    border-radius: 12px;
+    padding: 25px;
+    font-size: 23px;
+    line-height: 1.5em;
+}
+
+form label {
+    display: block;
+    margin: 10px 0px;
+}
+
+form input {
+    height: 45px;
+    width: 75%;
+    min-width: 100px;
+}
+
+form input:focus {
+    border: 2px solid var(--cor1);
+    outline: none;
+}
+
+form button {
+    height: 45px;
+    color: white;
+    background-color: var(--cor1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 23%;
+    min-width: 100px;
+}
+
+form button:hover {
+    background-color: var(--cor2);
+}
+
+
+li button {
+    margin: 20px 0px 0px 20px;
+    padding: 5px;
+    font-size: 17px;
+
+}
