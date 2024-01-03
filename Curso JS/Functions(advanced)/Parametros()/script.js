@@ -1,7 +1,7 @@
 // "arguments" que sustenta todos os argumentos enviados(só para funções usando function())
 function funcao() {
     let total = 0;
-    for(let i of arguments) {
+    for (let i of arguments) {
         total += i;
     }
     console.log(total);
@@ -28,11 +28,11 @@ funcao4({ nome: 'Jhonathan', sobrenome: 'Pimenta', idade: 17 });
 
 //
 function conta(operador, acumulador, ...numeros) {
-    for(let numero of numeros) {
-        if(operador === '+') acumulador += numero;
-        if(operador === '-') acumulador -= numero;
-        if(operador === '*') acumulador *= numero;
-        if(operador === '/') acumulador /= numero;
+    for (let numero of numeros) {
+        if (operador === '+') acumulador += numero;
+        if (operador === '-') acumulador -= numero;
+        if (operador === '*') acumulador *= numero;
+        if (operador === '/') acumulador /= numero;
     }
 
     console.log(acumulador);
