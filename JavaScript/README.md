@@ -1,4 +1,4 @@
-# Curso de JavaScript Moderno
+# Curso de JavaScript
 
 Bem-vindo à pasta do meu repositório dedicada ao Curso de JavaScript. Este curso abrange desde conceitos básicos até tópicos avançados, proporcionando uma compreensão abrangente do JavaScript.
 
