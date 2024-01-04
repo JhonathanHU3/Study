@@ -4,7 +4,7 @@ Bem-vindo ao meu repositório de estudos! Este é o lugar onde eu organizo e com
 
 ## Conteúdo
 
-### 1. [JavaScript](./Javascript)
+### 1. [JavaScript](./JavaScript)
    - Exemplos de código
    - Exercícios resolvidos
 
