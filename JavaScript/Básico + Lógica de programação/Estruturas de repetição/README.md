@@ -1,4 +1,4 @@
-#FOR(clássico), FOR IN, FOR OF, WHILE, BREAK E CONTINUE
+## FOR(clássico), FOR IN, FOR OF, WHILE, BREAK E CONTINUE
 
 For clássico -> Geralmente é utilizado com iteráveis (array ou strings).
 
